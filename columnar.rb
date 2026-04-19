@@ -5,21 +5,21 @@
 class Columnar < Formula
   desc "A universal elastic tabstop code formatter"
   homepage "https://github.com/mudittt/columnar"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mudittt/columnar/releases/download/v0.1.1/columnar_darwin_amd64.tar.gz"
-      sha256 "0eb1e3ac29be8ec7845d63f5626b5d67cfda25f8b8e097039aada5df9486e75c"
+      url "https://github.com/mudittt/columnar/releases/download/v0.1.2/columnar_darwin_amd64.tar.gz"
+      sha256 "32493a7e63272c58c7bcfd4f71648691ee67809a321111c1f5e63788ce9cebdc"
 
       define_method(:install) do
         bin.install "columnar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mudittt/columnar/releases/download/v0.1.1/columnar_darwin_arm64.tar.gz"
-      sha256 "783fcce4da0ffd8706267cf18caa9866cfdfdd3a7ed9e084927c0635f856304d"
+      url "https://github.com/mudittt/columnar/releases/download/v0.1.2/columnar_darwin_arm64.tar.gz"
+      sha256 "1d56c7192e3ad164b3a7764272a10ee5e943d7b90cfe3cf86eb1bb7889176da1"
 
       define_method(:install) do
         bin.install "columnar"
@@ -29,15 +29,15 @@ class Columnar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mudittt/columnar/releases/download/v0.1.1/columnar_linux_amd64.tar.gz"
-      sha256 "a0c8fdac1c316ed4a900058fa6757c7d46b740558dbb4f032a70424e868dc309"
+      url "https://github.com/mudittt/columnar/releases/download/v0.1.2/columnar_linux_amd64.tar.gz"
+      sha256 "a9bafd674331134f0d9a75af4734efd97f1819c59a654d9b8016ce1ff57508fc"
       define_method(:install) do
         bin.install "columnar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mudittt/columnar/releases/download/v0.1.1/columnar_linux_arm64.tar.gz"
-      sha256 "1df71b3262ffd6f819458140858304fac01ec7e38554e04c7c3686654c5c185c"
+      url "https://github.com/mudittt/columnar/releases/download/v0.1.2/columnar_linux_arm64.tar.gz"
+      sha256 "d80ee1dd3a6a53f0a037f20e8ce7e235afee14522ac44cb9142ec2458aa8cf03"
       define_method(:install) do
         bin.install "columnar"
       end
